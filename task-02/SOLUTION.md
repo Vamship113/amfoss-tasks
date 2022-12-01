@@ -24,7 +24,7 @@
 10. - cat part1.txt part2.txt part3.txt part4.txt > password.txt
   - rm part1.txt part2.txt part3.txt part4.txt
 
-![image](https://drive.google.com/file/d/19F9Hw3Kfs9i8O7GW1YvZLxoT3yPSbLgX/view?usp=sharing)
+
 
 
 
