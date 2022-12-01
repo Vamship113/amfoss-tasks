@@ -1,11 +1,11 @@
 1. git clone https://github.com/gauthamk02/TerminalHunt.git <br>
-2. cd TerminalHunt 
-  mkdir solution
+2. - cd TerminalHunt 
+   - mkdir solution
 3. gedit part1.txt stored 107 value init
-4. cd /06
+4. - cd /06
   - cp 1.txt /home/vinnu/TerminalHunt/solution
   - mv 1.txt part2.txt
-5. -git log
+5. - git log
   - cd ..
   - cd 10
   - cp 1.txt /home/vinnu/TerminalHunt/solution
