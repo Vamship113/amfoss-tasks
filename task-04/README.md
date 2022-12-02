@@ -1,5 +1,5 @@
 1. Using botfather I created bot called moviyear_bot and generated API key
-2. And using OMDb I gnerated Key 
+2. And using OMDb I generated Key 
 3. Then replaced it in bot.py for bot_id and OmDb key
 4. Using request and json I stored the data in string and photo and then sent back the inform to the user 
 5. Every time user searches for a movie the data is stored in a list
