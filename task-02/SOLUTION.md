@@ -23,6 +23,8 @@
   - mv athens.txt part4.txt
 10. - cat part1.txt part2.txt part3.txt part4.txt > password.txt
   - rm part1.txt part2.txt part3.txt part4.txt
+
+
 ![Screenshot from 2022-12-01 21-53-42](https://user-images.githubusercontent.com/92430906/205295643-f0471343-e48b-43fd-be3e-859564f62fdb.jpg)
 
 
