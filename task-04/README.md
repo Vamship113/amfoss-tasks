@@ -1,41 +1,10 @@
-## 📌 Introduction
-This is a Python Telegram bot challenge for Praveshan 2022.
-
-## 🏃‍ Getting Started
-- Fork this repository and then clone it.
-- Create a Python virtual environment in the directory, and activate it:
-  ```sh
-  python3 -m venv .
-  source bin/activate
-  ```
-- Install required packages:
-  ```sh
-  pip3 install -r requirements.txt
-  ```
-- To run the bot (for testing):
-  ```sh
-  python3 bot.py
-  ```
-
-## 🧱 Stages
-   - **Stage 1:** Fetching Movie Data from the OMDB API and displaying it to the Telegram chatbox.
-   
-      - 3 TODOs from 1.1 to 1.3. 
-  
-  - **Stage 2:** Dumping the Movie Data to a CSV File.
-
-      - 2 TODOs 2.1 and 2.2.
-
-  - **Stage 3:** **OPTIONAL** Deploy the bot to [Replit](https://replit.com/).
-
-## 🎓 Resources
-- [OMDB API](https://www.omdbapi.com/)
-- [pyTelegramBotAPI](https://pypi.org/project/pyTelegramBotAPI/0.3.0/)
-- [BotFather](https://medium.com/shibinco/create-a-telegram-bot-using-botfather-and-get-the-api-token-900ba00e0f39)
-
-## 📝 Submission Guidelines
-Add the Python script to the task-4 folder in your amfoss-tasks repository.
+1. Using botfather I created bot called movieyear_bot and generated API key
+2. And using OMDb I generated Key 
+3. Then replaced it in bot.py for bot_id and OmDb key
+4. Using request and json I stored the data in string and photo and then sent back the inform to the user 
+5. Every time user searches for a movie the data is stored in a list
+6. When user choose for export the data stored in list is stored in CSV and then return CSV back to user for download 
 
 
-## 👀 Live Bot Preview
-- [Bot Link](https://t.me/OMDBTESTbot)
+https://user-images.githubusercontent.com/92430906/205291882-348541f5-1e6d-4d79-af64-346f5b2383ff.mp4
+
