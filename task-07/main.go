@@ -1,49 +1,25 @@
 package main
 
 import (
-    "fmt"
-    
+    "github.com/gopherjs/gopherjs/js"
 )
 
-var counter int
-
+var value=0
 func main() {
-
-    counter = 0
-
     increaseButton := js.Global.Get("document").Call("getElementById", "inc")
-    decreaseButton := js.Global.Get("document").Call("getElementById", "dec")
-    resetButton := js.Global.Get("document").Call("getElementById", "res")
 
+    // Define a function to be called when the "inc" button is clicked
+    increaseCounter := func(event *js.Object) {
+        // Get the current value of the "counter" element
+        counter := js.Global.Get("document").Call("getElementById", "counter")
+        value := counter.Get("value").Int()
 
-    increaseButton.Call("addEventListener", "click", incrementCounter)
-    decreaseButton.Call("addEventListener", "click", decrementCounter)
-    resetButton.Call("addEventListener", "click", resetCounter)
-    increaseButton.Set("innerHTML", counter)
-    decreaseButton.Set("innerHTML", counter)
-    resetButton.Set("innerHTML", counter)
+        // Increment the value of the "counter" element
+        counter.Set("value", value+1)
+    }
+
+    // Attach the "increaseCounter" function as a click event listener
+    // to the "inc" button
+    increaseButton.Call("addEventListener", "click", increaseCounter)
 }
 
-func incrementCounter() {
-
-    counter++
-
-    
-    fmt.Println(counter)
-}
-
-func decrementCounter() {
-   
-    counter--
-
-    
-    fmt.Println(counter)
-}
-
-func resetCounter() {
-
-    counter = 0
-
-   
-    fmt.Println(counter)
-}
