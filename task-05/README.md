@@ -14,7 +14,7 @@
 - using System.Net;
 - using System.Net.Sockets;
 
-2. I have replaced     Socket sender = new Socket(ipAddress.AddressFamily);   by Socket sender = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-3.Since name,interests and mailare string so I declared them as String name,interests and mail.
+2. I have replaced Socket sender = new Socket(ipAddress.AddressFamily); by Socket sender = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+3. Since name,interests and mail are of type string so I declared them as String name,interests and mail.
 4. since we store group of messages I used msg[] of byte type
 5. in main function Start() was changed to StartClient()
