@@ -3,10 +3,13 @@ import telebot
 import requests
 import json
 import csv
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # TODO: 1.1 Get your environment variables 
-yourkey = os.getenv('yourkey')
-bot_id = os.getenv('bot_id')
+yourkey = os.getenv('key')
+bot_id = os.getenv('bot')
 
 bot = telebot.TeleBot(bot_id)
 global final
