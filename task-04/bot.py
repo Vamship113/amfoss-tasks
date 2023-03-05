@@ -5,8 +5,8 @@ import json
 import csv
 
 # TODO: 1.1 Get your environment variables 
-yourkey = "60b64a7f"
-bot_id = "5724015164:AAEnlp-L2TJlTtLUe1k1O8pMzNhgcaxu1Xg"
+yourkey = os.getenv('yourkey')
+bot_id = os.getenv('bot_id')
 
 bot = telebot.TeleBot(bot_id)
 global final
